@@ -1,0 +1,442 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\profi\\source\\repos\\Zurnal_Vizual\\Zurnal\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{E948AFF5-A619-4931-84CF-9FF05938A922}|Zurnal.csproj|c:\\users\\profi\\source\\repos\\zurnal_vizual\\zurnal\\console_ui\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E948AFF5-A619-4931-84CF-9FF05938A922}|Zurnal.csproj|solutionrelative:console_ui\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E948AFF5-A619-4931-84CF-9FF05938A922}|Zurnal.csproj|c:\\users\\profi\\source\\repos\\zurnal_vizual\\zurnal\\ui\\userconsole.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E948AFF5-A619-4931-84CF-9FF05938A922}|Zurnal.csproj|solutionrelative:ui\\userconsole.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E948AFF5-A619-4931-84CF-9FF05938A922}|Zurnal.csproj|c:\\users\\profi\\source\\repos\\zurnal_vizual\\zurnal\\data\\remotedata\\remotedatabase\\remotedatabasecontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E948AFF5-A619-4931-84CF-9FF05938A922}|Zurnal.csproj|solutionrelative:data\\remotedata\\remotedatabase\\remotedatabasecontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E948AFF5-A619-4931-84CF-9FF05938A922}|Zurnal.csproj|c:\\users\\profi\\source\\repos\\zurnal_vizual\\zurnal\\ui\\mainmenu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E948AFF5-A619-4931-84CF-9FF05938A922}|Zurnal.csproj|solutionrelative:ui\\mainmenu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E948AFF5-A619-4931-84CF-9FF05938A922}|Zurnal.csproj|c:\\users\\profi\\source\\repos\\zurnal_vizual\\zurnal\\presence_api\\programapi.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E948AFF5-A619-4931-84CF-9FF05938A922}|Zurnal.csproj|solutionrelative:presence_api\\programapi.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E948AFF5-A619-4931-84CF-9FF05938A922}|Zurnal.csproj|c:\\users\\profi\\source\\repos\\zurnal_vizual\\zurnal\\data\\repository\\ipresencerepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E948AFF5-A619-4931-84CF-9FF05938A922}|Zurnal.csproj|solutionrelative:data\\repository\\ipresencerepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E948AFF5-A619-4931-84CF-9FF05938A922}|Zurnal.csproj|c:\\users\\profi\\source\\repos\\zurnal_vizual\\zurnal\\data\\repository\\sqluserrepositoryimpl.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E948AFF5-A619-4931-84CF-9FF05938A922}|Zurnal.csproj|solutionrelative:data\\repository\\sqluserrepositoryimpl.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E948AFF5-A619-4931-84CF-9FF05938A922}|Zurnal.csproj|c:\\users\\profi\\source\\repos\\zurnal_vizual\\zurnal\\ui\\presenceconsole.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E948AFF5-A619-4931-84CF-9FF05938A922}|Zurnal.csproj|solutionrelative:ui\\presenceconsole.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E948AFF5-A619-4931-84CF-9FF05938A922}|Zurnal.csproj|c:\\users\\profi\\source\\repos\\zurnal_vizual\\zurnal\\data\\repository\\sqlgrouprepositoryimpl.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E948AFF5-A619-4931-84CF-9FF05938A922}|Zurnal.csproj|solutionrelative:data\\repository\\sqlgrouprepositoryimpl.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E948AFF5-A619-4931-84CF-9FF05938A922}|Zurnal.csproj|c:\\users\\profi\\source\\repos\\zurnal_vizual\\zurnal\\domain\\usecase\\usecasegeneratepresence.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E948AFF5-A619-4931-84CF-9FF05938A922}|Zurnal.csproj|solutionrelative:domain\\usecase\\usecasegeneratepresence.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E948AFF5-A619-4931-84CF-9FF05938A922}|Zurnal.csproj|c:\\users\\profi\\source\\repos\\zurnal_vizual\\zurnal\\presence_api\\controllers\\adminpanelcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E948AFF5-A619-4931-84CF-9FF05938A922}|Zurnal.csproj|solutionrelative:presence_api\\controllers\\adminpanelcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E948AFF5-A619-4931-84CF-9FF05938A922}|Zurnal.csproj|c:\\users\\profi\\source\\repos\\zurnal_vizual\\zurnal\\presence_api\\controllers\\groupcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E948AFF5-A619-4931-84CF-9FF05938A922}|Zurnal.csproj|solutionrelative:presence_api\\controllers\\groupcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E948AFF5-A619-4931-84CF-9FF05938A922}|Zurnal.csproj|c:\\users\\profi\\source\\repos\\zurnal_vizual\\zurnal\\domain\\usecase\\userusecase.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E948AFF5-A619-4931-84CF-9FF05938A922}|Zurnal.csproj|solutionrelative:domain\\usecase\\userusecase.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E948AFF5-A619-4931-84CF-9FF05938A922}|Zurnal.csproj|c:\\users\\profi\\source\\repos\\zurnal_vizual\\zurnal\\data\\repository\\iuserrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E948AFF5-A619-4931-84CF-9FF05938A922}|Zurnal.csproj|solutionrelative:data\\repository\\iuserrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E948AFF5-A619-4931-84CF-9FF05938A922}|Zurnal.csproj|c:\\users\\profi\\source\\repos\\zurnal_vizual\\zurnal\\data\\remotedata\\remotedatabase\\dao\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E948AFF5-A619-4931-84CF-9FF05938A922}|Zurnal.csproj|solutionrelative:data\\remotedata\\remotedatabase\\dao\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E948AFF5-A619-4931-84CF-9FF05938A922}|Zurnal.csproj|c:\\users\\profi\\source\\repos\\zurnal_vizual\\zurnal\\data\\remotedata\\remotedatabase\\dao\\presence.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E948AFF5-A619-4931-84CF-9FF05938A922}|Zurnal.csproj|solutionrelative:data\\remotedata\\remotedatabase\\dao\\presence.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E948AFF5-A619-4931-84CF-9FF05938A922}|Zurnal.csproj|c:\\users\\profi\\source\\repos\\zurnal_vizual\\zurnal\\data\\repository\\userrepositoryimpl.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E948AFF5-A619-4931-84CF-9FF05938A922}|Zurnal.csproj|solutionrelative:data\\repository\\userrepositoryimpl.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E948AFF5-A619-4931-84CF-9FF05938A922}|Zurnal.csproj|c:\\users\\profi\\source\\repos\\zurnal_vizual\\zurnal\\data\\repository\\presencerepositoryimpl.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E948AFF5-A619-4931-84CF-9FF05938A922}|Zurnal.csproj|solutionrelative:data\\repository\\presencerepositoryimpl.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E948AFF5-A619-4931-84CF-9FF05938A922}|Zurnal.csproj|c:\\users\\profi\\source\\repos\\zurnal_vizual\\zurnal\\presence\\usecasegeneratepresence.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E948AFF5-A619-4931-84CF-9FF05938A922}|Zurnal.csproj|solutionrelative:presence\\usecasegeneratepresence.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E948AFF5-A619-4931-84CF-9FF05938A922}|Zurnal.csproj|c:\\users\\profi\\source\\repos\\zurnal_vizual\\zurnal\\data\\localdata\\entity\\group.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E948AFF5-A619-4931-84CF-9FF05938A922}|Zurnal.csproj|solutionrelative:data\\localdata\\entity\\group.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E948AFF5-A619-4931-84CF-9FF05938A922}|Zurnal.csproj|c:\\users\\profi\\source\\repos\\zurnal_vizual\\zurnal\\data\\obj\\debug\\net8.0\\data.assemblyinfo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E948AFF5-A619-4931-84CF-9FF05938A922}|Zurnal.csproj|solutionrelative:data\\obj\\debug\\net8.0\\data.assemblyinfo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E948AFF5-A619-4931-84CF-9FF05938A922}|Zurnal.csproj|c:\\users\\profi\\source\\repos\\zurnal_vizual\\zurnal\\zurnal.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{E948AFF5-A619-4931-84CF-9FF05938A922}|Zurnal.csproj|solutionrelative:zurnal.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E948AFF5-A619-4931-84CF-9FF05938A922}|Zurnal.csproj|c:\\users\\profi\\source\\repos\\zurnal_vizual\\zurnal\\data\\remotedata\\remotedatabase\\dao\\excel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E948AFF5-A619-4931-84CF-9FF05938A922}|Zurnal.csproj|solutionrelative:data\\remotedata\\remotedatabase\\dao\\excel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E948AFF5-A619-4931-84CF-9FF05938A922}|Zurnal.csproj|c:\\users\\profi\\source\\repos\\zurnal_vizual\\zurnal\\domain\\obj\\debug\\net8.0\\domain.assemblyinfo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E948AFF5-A619-4931-84CF-9FF05938A922}|Zurnal.csproj|solutionrelative:domain\\obj\\debug\\net8.0\\domain.assemblyinfo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E948AFF5-A619-4931-84CF-9FF05938A922}|Zurnal.csproj|c:\\users\\profi\\source\\repos\\zurnal_vizual\\zurnal\\ui\\obj\\debug\\net8.0\\ui.assemblyinfo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E948AFF5-A619-4931-84CF-9FF05938A922}|Zurnal.csproj|solutionrelative:ui\\obj\\debug\\net8.0\\ui.assemblyinfo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E948AFF5-A619-4931-84CF-9FF05938A922}|Zurnal.csproj|c:\\users\\profi\\source\\repos\\zurnal_vizual\\zurnal\\data\\localdata\\entity\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E948AFF5-A619-4931-84CF-9FF05938A922}|Zurnal.csproj|solutionrelative:data\\localdata\\entity\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\profi\\source\\repos\\Zurnal_Vizual\\Zurnal\\console_ui\\Program.cs",
+              "RelativeDocumentMoniker": "console_ui\\Program.cs",
+              "ToolTip": "C:\\Users\\profi\\source\\repos\\Zurnal_Vizual\\Zurnal\\console_ui\\Program.cs",
+              "RelativeToolTip": "console_ui\\Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAgAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-18T09:46:45.637Z",
+              "IsPinned": true,
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{aa2115a1-9712-457b-9047-dbb71ca2cdd2}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "ProgramApi.cs",
+              "DocumentMoniker": "C:\\Users\\profi\\source\\repos\\Zurnal_Vizual\\Zurnal\\presence_api\\ProgramApi.cs",
+              "RelativeDocumentMoniker": "presence_api\\ProgramApi.cs",
+              "ToolTip": "C:\\Users\\profi\\source\\repos\\Zurnal_Vizual\\Zurnal\\presence_api\\ProgramApi.cs",
+              "RelativeToolTip": "presence_api\\ProgramApi.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAfAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-25T10:19:03.775Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "RemoteDatabaseContext.cs",
+              "DocumentMoniker": "C:\\Users\\profi\\source\\repos\\Zurnal_Vizual\\Zurnal\\data\\remoteData\\RemoteDataBase\\RemoteDatabaseContext.cs",
+              "RelativeDocumentMoniker": "data\\remoteData\\RemoteDataBase\\RemoteDatabaseContext.cs",
+              "ToolTip": "C:\\Users\\profi\\source\\repos\\Zurnal_Vizual\\Zurnal\\data\\remoteData\\RemoteDataBase\\RemoteDatabaseContext.cs",
+              "RelativeToolTip": "data\\remoteData\\RemoteDataBase\\RemoteDatabaseContext.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACQAAAAqAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-20T09:19:34.861Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "IUserRepository.cs",
+              "DocumentMoniker": "C:\\Users\\profi\\source\\repos\\Zurnal_Vizual\\Zurnal\\data\\Repository\\IUserRepository.cs",
+              "RelativeDocumentMoniker": "data\\Repository\\IUserRepository.cs",
+              "ToolTip": "C:\\Users\\profi\\source\\repos\\Zurnal_Vizual\\Zurnal\\data\\Repository\\IUserRepository.cs",
+              "RelativeToolTip": "data\\Repository\\IUserRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAUAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-18T11:11:13.758Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "PresenceConsole.cs",
+              "DocumentMoniker": "C:\\Users\\profi\\source\\repos\\Zurnal_Vizual\\Zurnal\\ui\\PresenceConsole.cs",
+              "RelativeDocumentMoniker": "ui\\PresenceConsole.cs",
+              "ToolTip": "C:\\Users\\profi\\source\\repos\\Zurnal_Vizual\\Zurnal\\ui\\PresenceConsole.cs",
+              "RelativeToolTip": "ui\\PresenceConsole.cs",
+              "ViewState": "AgIAAJIAAAAAAAAAAADgv6cAAABKAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-18T09:57:46.725Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "SQLUserRepositoryImpl.cs",
+              "DocumentMoniker": "C:\\Users\\profi\\source\\repos\\Zurnal_Vizual\\Zurnal\\data\\Repository\\SQLUserRepositoryImpl.cs",
+              "RelativeDocumentMoniker": "data\\Repository\\SQLUserRepositoryImpl.cs",
+              "ToolTip": "C:\\Users\\profi\\source\\repos\\Zurnal_Vizual\\Zurnal\\data\\Repository\\SQLUserRepositoryImpl.cs",
+              "RelativeToolTip": "data\\Repository\\SQLUserRepositoryImpl.cs",
+              "ViewState": "AgIAACIAAAAAAAAAAAAjwDUAAABsAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-18T11:31:08.725Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "UseCaseGeneratePresence.cs",
+              "DocumentMoniker": "C:\\Users\\profi\\source\\repos\\Zurnal_Vizual\\Zurnal\\domain\\UseCase\\UseCaseGeneratePresence.cs",
+              "RelativeDocumentMoniker": "domain\\UseCase\\UseCaseGeneratePresence.cs",
+              "ToolTip": "C:\\Users\\profi\\source\\repos\\Zurnal_Vizual\\Zurnal\\domain\\UseCase\\UseCaseGeneratePresence.cs",
+              "RelativeToolTip": "domain\\UseCase\\UseCaseGeneratePresence.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAArAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-18T11:14:27.431Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "UserConsole.cs",
+              "DocumentMoniker": "C:\\Users\\profi\\source\\repos\\Zurnal_Vizual\\Zurnal\\ui\\UserConsole.cs",
+              "RelativeDocumentMoniker": "ui\\UserConsole.cs",
+              "ToolTip": "C:\\Users\\profi\\source\\repos\\Zurnal_Vizual\\Zurnal\\ui\\UserConsole.cs",
+              "RelativeToolTip": "ui\\UserConsole.cs",
+              "ViewState": "AgIAADIAAAAAAAAAAAAIwEQAAAAEAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-20T09:38:25.123Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "MainMenu.cs",
+              "DocumentMoniker": "C:\\Users\\profi\\source\\repos\\Zurnal_Vizual\\Zurnal\\ui\\MainMenu.cs",
+              "RelativeDocumentMoniker": "ui\\MainMenu.cs",
+              "ToolTip": "C:\\Users\\profi\\source\\repos\\Zurnal_Vizual\\Zurnal\\ui\\MainMenu.cs",
+              "RelativeToolTip": "ui\\MainMenu.cs",
+              "ViewState": "AgIAAMwAAAAAAAAAAAAowAUAAAARAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-18T09:57:44.983Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "IPresenceRepository.cs",
+              "DocumentMoniker": "C:\\Users\\profi\\source\\repos\\Zurnal_Vizual\\Zurnal\\data\\Repository\\IPresenceRepository.cs",
+              "RelativeDocumentMoniker": "data\\Repository\\IPresenceRepository.cs",
+              "ToolTip": "C:\\Users\\profi\\source\\repos\\Zurnal_Vizual\\Zurnal\\data\\Repository\\IPresenceRepository.cs",
+              "RelativeToolTip": "data\\Repository\\IPresenceRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAyAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-20T07:21:17.235Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "GroupController.cs",
+              "DocumentMoniker": "C:\\Users\\profi\\source\\repos\\Zurnal_Vizual\\Zurnal\\presence_api\\Controllers\\GroupController.cs",
+              "RelativeDocumentMoniker": "presence_api\\Controllers\\GroupController.cs",
+              "ToolTip": "C:\\Users\\profi\\source\\repos\\Zurnal_Vizual\\Zurnal\\presence_api\\Controllers\\GroupController.cs",
+              "RelativeToolTip": "presence_api\\Controllers\\GroupController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAwAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-20T09:39:15.385Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "SQLGroupRepositoryImpl.cs",
+              "DocumentMoniker": "C:\\Users\\profi\\source\\repos\\Zurnal_Vizual\\Zurnal\\data\\Repository\\SQLGroupRepositoryImpl.cs",
+              "RelativeDocumentMoniker": "data\\Repository\\SQLGroupRepositoryImpl.cs",
+              "ToolTip": "C:\\Users\\profi\\source\\repos\\Zurnal_Vizual\\Zurnal\\data\\Repository\\SQLGroupRepositoryImpl.cs",
+              "RelativeToolTip": "data\\Repository\\SQLGroupRepositoryImpl.cs",
+              "ViewState": "AgIAACUAAAAAAAAAAAAjwDwAAAAgAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-18T12:20:16.715Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "AdminPanelController.cs",
+              "DocumentMoniker": "C:\\Users\\profi\\source\\repos\\Zurnal_Vizual\\Zurnal\\presence_api\\Controllers\\AdminPanelController.cs",
+              "RelativeDocumentMoniker": "presence_api\\Controllers\\AdminPanelController.cs",
+              "ToolTip": "C:\\Users\\profi\\source\\repos\\Zurnal_Vizual\\Zurnal\\presence_api\\Controllers\\AdminPanelController.cs",
+              "RelativeToolTip": "presence_api\\Controllers\\AdminPanelController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAsAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-20T09:39:20.049Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "Presence.cs",
+              "DocumentMoniker": "C:\\Users\\profi\\source\\repos\\Zurnal_Vizual\\Zurnal\\data\\remoteData\\RemoteDataBase\\DAO\\Presence.cs",
+              "RelativeDocumentMoniker": "data\\remoteData\\RemoteDataBase\\DAO\\Presence.cs",
+              "ToolTip": "C:\\Users\\profi\\source\\repos\\Zurnal_Vizual\\Zurnal\\data\\remoteData\\RemoteDataBase\\DAO\\Presence.cs",
+              "RelativeToolTip": "data\\remoteData\\RemoteDataBase\\DAO\\Presence.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAqwAkAAAAeAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-18T11:20:51.605Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "User.cs",
+              "DocumentMoniker": "C:\\Users\\profi\\source\\repos\\Zurnal_Vizual\\Zurnal\\data\\remoteData\\RemoteDataBase\\DAO\\User.cs",
+              "RelativeDocumentMoniker": "data\\remoteData\\RemoteDataBase\\DAO\\User.cs",
+              "ToolTip": "C:\\Users\\profi\\source\\repos\\Zurnal_Vizual\\Zurnal\\data\\remoteData\\RemoteDataBase\\DAO\\User.cs",
+              "RelativeToolTip": "data\\remoteData\\RemoteDataBase\\DAO\\User.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAqwAoAAABGAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-18T09:50:56.039Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "UserUseCase.cs",
+              "DocumentMoniker": "C:\\Users\\profi\\source\\repos\\Zurnal_Vizual\\Zurnal\\domain\\UseCase\\UserUseCase.cs",
+              "RelativeDocumentMoniker": "domain\\UseCase\\UserUseCase.cs",
+              "ToolTip": "C:\\Users\\profi\\source\\repos\\Zurnal_Vizual\\Zurnal\\domain\\UseCase\\UserUseCase.cs",
+              "RelativeToolTip": "domain\\UseCase\\UserUseCase.cs",
+              "ViewState": "AgIAABAAAAAAAAAAAAAgwAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-20T09:38:04.251Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "UserRepositoryImpl.cs",
+              "DocumentMoniker": "C:\\Users\\profi\\source\\repos\\Zurnal_Vizual\\Zurnal\\data\\Repository\\UserRepositoryImpl.cs",
+              "RelativeDocumentMoniker": "data\\Repository\\UserRepositoryImpl.cs",
+              "ToolTip": "C:\\Users\\profi\\source\\repos\\Zurnal_Vizual\\Zurnal\\data\\Repository\\UserRepositoryImpl.cs",
+              "RelativeToolTip": "data\\Repository\\UserRepositoryImpl.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAADEAAAAyAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-18T11:32:15.448Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "PresenceRepositoryImpl.cs",
+              "DocumentMoniker": "C:\\Users\\profi\\source\\repos\\Zurnal_Vizual\\Zurnal\\data\\Repository\\PresenceRepositoryImpl.cs",
+              "RelativeDocumentMoniker": "data\\Repository\\PresenceRepositoryImpl.cs",
+              "ToolTip": "C:\\Users\\profi\\source\\repos\\Zurnal_Vizual\\Zurnal\\data\\Repository\\PresenceRepositoryImpl.cs",
+              "RelativeToolTip": "data\\Repository\\PresenceRepositoryImpl.cs",
+              "ViewState": "AgIAABkAAAAAAAAAAAAiwCAAAAAlAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-20T07:22:49.793Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 23,
+              "Title": "domain.AssemblyInfo.cs",
+              "DocumentMoniker": "C:\\Users\\profi\\source\\repos\\Zurnal_Vizual\\Zurnal\\domain\\obj\\Debug\\net8.0\\domain.AssemblyInfo.cs",
+              "RelativeDocumentMoniker": "domain\\obj\\Debug\\net8.0\\domain.AssemblyInfo.cs",
+              "ToolTip": "C:\\Users\\profi\\source\\repos\\Zurnal_Vizual\\Zurnal\\domain\\obj\\Debug\\net8.0\\domain.AssemblyInfo.cs",
+              "RelativeToolTip": "domain\\obj\\Debug\\net8.0\\domain.AssemblyInfo.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-18T11:14:24.281Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 22,
+              "Title": "Excel.cs",
+              "DocumentMoniker": "C:\\Users\\profi\\source\\repos\\Zurnal_Vizual\\Zurnal\\data\\remoteData\\RemoteDataBase\\DAO\\Excel.cs",
+              "RelativeDocumentMoniker": "data\\remoteData\\RemoteDataBase\\DAO\\Excel.cs",
+              "ToolTip": "C:\\Users\\profi\\source\\repos\\Zurnal_Vizual\\Zurnal\\data\\remoteData\\RemoteDataBase\\DAO\\Excel.cs",
+              "RelativeToolTip": "data\\remoteData\\RemoteDataBase\\DAO\\Excel.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAAAWAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-20T07:20:59.979Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 25,
+              "Title": "User.cs",
+              "DocumentMoniker": "C:\\Users\\profi\\source\\repos\\Zurnal_Vizual\\Zurnal\\data\\LocalData\\Entity\\User.cs",
+              "RelativeDocumentMoniker": "data\\LocalData\\Entity\\User.cs",
+              "ToolTip": "C:\\Users\\profi\\source\\repos\\Zurnal_Vizual\\Zurnal\\data\\LocalData\\Entity\\User.cs",
+              "RelativeToolTip": "data\\LocalData\\Entity\\User.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAqwAgAAAARAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-18T09:51:53.464Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "UseCaseGeneratePresence.cs",
+              "DocumentMoniker": "C:\\Users\\profi\\source\\repos\\Zurnal_Vizual\\Zurnal\\Presence\\UseCaseGeneratePresence.cs",
+              "RelativeDocumentMoniker": "Presence\\UseCaseGeneratePresence.cs",
+              "ToolTip": "C:\\Users\\profi\\source\\repos\\Zurnal_Vizual\\Zurnal\\Presence\\UseCaseGeneratePresence.cs",
+              "RelativeToolTip": "Presence\\UseCaseGeneratePresence.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAwwBgAAAA1AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-18T11:32:43.673Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 24,
+              "Title": "ui.AssemblyInfo.cs",
+              "DocumentMoniker": "C:\\Users\\profi\\source\\repos\\Zurnal_Vizual\\Zurnal\\ui\\obj\\Debug\\net8.0\\ui.AssemblyInfo.cs",
+              "RelativeDocumentMoniker": "ui\\obj\\Debug\\net8.0\\ui.AssemblyInfo.cs",
+              "ToolTip": "C:\\Users\\profi\\source\\repos\\Zurnal_Vizual\\Zurnal\\ui\\obj\\Debug\\net8.0\\ui.AssemblyInfo.cs",
+              "RelativeToolTip": "ui\\obj\\Debug\\net8.0\\ui.AssemblyInfo.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-18T11:18:54.217Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 21,
+              "Title": "Zurnal.csproj",
+              "DocumentMoniker": "C:\\Users\\profi\\source\\repos\\Zurnal_Vizual\\Zurnal\\Zurnal.csproj",
+              "RelativeDocumentMoniker": "Zurnal.csproj",
+              "ToolTip": "C:\\Users\\profi\\source\\repos\\Zurnal_Vizual\\Zurnal\\Zurnal.csproj",
+              "RelativeToolTip": "Zurnal.csproj",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2024-11-18T11:13:57.973Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 20,
+              "Title": "data.AssemblyInfo.cs",
+              "DocumentMoniker": "C:\\Users\\profi\\source\\repos\\Zurnal_Vizual\\Zurnal\\data\\obj\\Debug\\net8.0\\data.AssemblyInfo.cs",
+              "RelativeDocumentMoniker": "data\\obj\\Debug\\net8.0\\data.AssemblyInfo.cs",
+              "ToolTip": "C:\\Users\\profi\\source\\repos\\Zurnal_Vizual\\Zurnal\\data\\obj\\Debug\\net8.0\\data.AssemblyInfo.cs",
+              "RelativeToolTip": "data\\obj\\Debug\\net8.0\\data.AssemblyInfo.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-18T11:14:16.748Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 19,
+              "Title": "Group.cs",
+              "DocumentMoniker": "C:\\Users\\profi\\source\\repos\\Zurnal_Vizual\\Zurnal\\data\\LocalData\\Entity\\Group.cs",
+              "RelativeDocumentMoniker": "data\\LocalData\\Entity\\Group.cs",
+              "ToolTip": "C:\\Users\\profi\\source\\repos\\Zurnal_Vizual\\Zurnal\\data\\LocalData\\Entity\\Group.cs",
+              "RelativeToolTip": "data\\LocalData\\Entity\\Group.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-18T09:52:07.479Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
