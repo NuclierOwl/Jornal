@@ -473,3 +473,4 @@ C:\Users\PC\source\repos\Zurnal_Vizual\Zurnal_Vizual\obj\Debug\net8.0\ref\Zurnal
 C:\Users\PC\source\repos\Zurnal_Vizual\Zurnal_Vizual\obj\Debug\net8.0\Zurnal_Vizual.dll
 C:\Users\PC\source\repos\Zurnal_Vizual\Zurnal_Vizual\obj\Debug\net8.0\refint\Zurnal_Vizual.dll
 C:\Users\PC\source\repos\Zurnal_Vizual\Zurnal_Vizual\obj\Debug\net8.0\Zurnal_Vizual.pdb
+C:\Users\PC\source\repos\Zurnal_Vizual\Zurnal_Vizual\obj\Debug\net8.0\Zurnal_Vizual.sourcelink.json

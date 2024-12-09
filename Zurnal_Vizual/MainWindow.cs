@@ -1,5 +1,5 @@
 ﻿using Avalonia.Controls;
-using Views.MainWindow;
+using Zurnal_Vizual.Views.MainWindow;
 
 namespace Zurnal_Vizual
 {

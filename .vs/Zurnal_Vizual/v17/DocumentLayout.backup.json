@@ -3,24 +3,20 @@
   "WorkspaceRootPath": "C:\\Users\\PC\\source\\repos\\Zurnal_Vizual\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{0A1535B3-B752-4911-B0A7-03B4974AAEF3}|Zurnal_Vizual\\Zurnal_Vizual.csproj|c:\\users\\pc\\source\\repos\\zurnal_vizual\\zurnal_vizual\\views\\mainwindow.axaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{0A1535B3-B752-4911-B0A7-03B4974AAEF3}|Zurnal_Vizual\\Zurnal_Vizual.csproj|solutionrelative:zurnal_vizual\\views\\mainwindow.axaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{0A1535B3-B752-4911-B0A7-03B4974AAEF3}|Zurnal_Vizual\\Zurnal_Vizual.csproj|c:\\users\\pc\\source\\repos\\zurnal_vizual\\zurnal_vizual\\viewmodels\\mainwindowviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{0A1535B3-B752-4911-B0A7-03B4974AAEF3}|Zurnal_Vizual\\Zurnal_Vizual.csproj|solutionrelative:zurnal_vizual\\viewmodels\\mainwindowviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{0A1535B3-B752-4911-B0A7-03B4974AAEF3}|Zurnal_Vizual\\Zurnal_Vizual.csproj|c:\\users\\pc\\source\\repos\\zurnal_vizual\\zurnal_vizual\\views\\mainwindow.axaml||{6D5344A2-2FCD-49DE-A09D-6A14FD1B1224}",
+      "RelativeMoniker": "D:0:0:{0A1535B3-B752-4911-B0A7-03B4974AAEF3}|Zurnal_Vizual\\Zurnal_Vizual.csproj|solutionrelative:zurnal_vizual\\views\\mainwindow.axaml||{6D5344A2-2FCD-49DE-A09D-6A14FD1B1224}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{0A1535B3-B752-4911-B0A7-03B4974AAEF3}|Zurnal_Vizual\\Zurnal_Vizual.csproj|c:\\users\\pc\\source\\repos\\zurnal_vizual\\zurnal_vizual\\mainwindow.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{0A1535B3-B752-4911-B0A7-03B4974AAEF3}|Zurnal_Vizual\\Zurnal_Vizual.csproj|solutionrelative:zurnal_vizual\\mainwindow.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{0A1535B3-B752-4911-B0A7-03B4974AAEF3}|Zurnal_Vizual\\Zurnal_Vizual.csproj|c:\\users\\pc\\source\\repos\\zurnal_vizual\\zurnal_vizual\\app.axaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{0A1535B3-B752-4911-B0A7-03B4974AAEF3}|Zurnal_Vizual\\Zurnal_Vizual.csproj|solutionrelative:zurnal_vizual\\app.axaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{0A1535B3-B752-4911-B0A7-03B4974AAEF3}|Zurnal_Vizual\\Zurnal_Vizual.csproj|c:\\users\\pc\\source\\repos\\zurnal_vizual\\zurnal_vizual\\viewmodels\\mainwindowviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0A1535B3-B752-4911-B0A7-03B4974AAEF3}|Zurnal_Vizual\\Zurnal_Vizual.csproj|solutionrelative:zurnal_vizual\\viewmodels\\mainwindowviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{0A1535B3-B752-4911-B0A7-03B4974AAEF3}|Zurnal_Vizual\\Zurnal_Vizual.csproj|c:\\users\\pc\\source\\repos\\zurnal_vizual\\zurnal_vizual\\views\\mainwindow.axaml||{6D5344A2-2FCD-49DE-A09D-6A14FD1B1224}",
-      "RelativeMoniker": "D:0:0:{0A1535B3-B752-4911-B0A7-03B4974AAEF3}|Zurnal_Vizual\\Zurnal_Vizual.csproj|solutionrelative:zurnal_vizual\\views\\mainwindow.axaml||{6D5344A2-2FCD-49DE-A09D-6A14FD1B1224}"
+      "AbsoluteMoniker": "D:0:0:{0A1535B3-B752-4911-B0A7-03B4974AAEF3}|Zurnal_Vizual\\Zurnal_Vizual.csproj|c:\\users\\pc\\source\\repos\\zurnal_vizual\\zurnal_vizual\\views\\mainwindow.axaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0A1535B3-B752-4911-B0A7-03B4974AAEF3}|Zurnal_Vizual\\Zurnal_Vizual.csproj|solutionrelative:zurnal_vizual\\views\\mainwindow.axaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{0A1535B3-B752-4911-B0A7-03B4974AAEF3}|Zurnal_Vizual\\Zurnal_Vizual.csproj|c:\\users\\pc\\source\\repos\\zurnal_vizual\\zurnal_vizual\\app.axaml||{6D5344A2-2FCD-49DE-A09D-6A14FD1B1224}",
@@ -46,33 +42,33 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 2,
               "Title": "MainWindowViewModel.cs",
               "DocumentMoniker": "C:\\Users\\PC\\source\\repos\\Zurnal_Vizual\\Zurnal_Vizual\\ViewModels\\MainWindowViewModel.cs",
               "RelativeDocumentMoniker": "Zurnal_Vizual\\ViewModels\\MainWindowViewModel.cs",
               "ToolTip": "C:\\Users\\PC\\source\\repos\\Zurnal_Vizual\\Zurnal_Vizual\\ViewModels\\MainWindowViewModel.cs",
               "RelativeToolTip": "Zurnal_Vizual\\ViewModels\\MainWindowViewModel.cs",
-              "ViewState": "AgIAACcAAAAAAAAAAAAAADMAAAAIAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-12-05T10:58:36.906Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 1,
               "Title": "MainWindow.cs",
               "DocumentMoniker": "C:\\Users\\PC\\source\\repos\\Zurnal_Vizual\\Zurnal_Vizual\\MainWindow.cs",
               "RelativeDocumentMoniker": "Zurnal_Vizual\\MainWindow.cs",
               "ToolTip": "C:\\Users\\PC\\source\\repos\\Zurnal_Vizual\\Zurnal_Vizual\\MainWindow.cs",
               "RelativeToolTip": "Zurnal_Vizual\\MainWindow.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAVAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAYAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-12-05T08:51:28.615Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 4,
               "Title": "App.axaml",
               "DocumentMoniker": "C:\\Users\\PC\\source\\repos\\Zurnal_Vizual\\Zurnal_Vizual\\App.axaml",
               "RelativeDocumentMoniker": "Zurnal_Vizual\\App.axaml",
@@ -85,32 +81,19 @@
             {
               "$type": "Document",
               "DocumentIndex": 3,
-              "Title": "App.axaml.cs",
-              "DocumentMoniker": "C:\\Users\\PC\\source\\repos\\Zurnal_Vizual\\Zurnal_Vizual\\App.axaml.cs",
-              "RelativeDocumentMoniker": "Zurnal_Vizual\\App.axaml.cs",
-              "ToolTip": "C:\\Users\\PC\\source\\repos\\Zurnal_Vizual\\Zurnal_Vizual\\App.axaml.cs",
-              "RelativeToolTip": "Zurnal_Vizual\\App.axaml.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAXAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-05T07:25:11.172Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
               "Title": "MainWindow.axaml.cs",
               "DocumentMoniker": "C:\\Users\\PC\\source\\repos\\Zurnal_Vizual\\Zurnal_Vizual\\Views\\MainWindow.axaml.cs",
               "RelativeDocumentMoniker": "Zurnal_Vizual\\Views\\MainWindow.axaml.cs",
               "ToolTip": "C:\\Users\\PC\\source\\repos\\Zurnal_Vizual\\Zurnal_Vizual\\Views\\MainWindow.axaml.cs",
               "RelativeToolTip": "Zurnal_Vizual\\Views\\MainWindow.axaml.cs",
-              "ViewState": "AgIAAEkAAAAAAAAAAAAAAFkAAABUAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-12-02T10:46:34.635Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 0,
               "Title": "MainWindow.axaml",
               "DocumentMoniker": "C:\\Users\\PC\\source\\repos\\Zurnal_Vizual\\Zurnal_Vizual\\Views\\MainWindow.axaml",
               "RelativeDocumentMoniker": "Zurnal_Vizual\\Views\\MainWindow.axaml",
