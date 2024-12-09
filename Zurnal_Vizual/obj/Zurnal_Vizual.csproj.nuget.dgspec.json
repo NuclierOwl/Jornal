@@ -50,6 +50,14 @@
         "net8.0": {
           "targetAlias": "net8.0",
           "dependencies": {
+            "Avalonia": {
+              "target": "Package",
+              "version": "[11.2.2, )"
+            },
+            "Avalonia.ReactiveUI": {
+              "target": "Package",
+              "version": "[11.2.2, )"
+            },
             "ClosedXML": {
               "target": "Package",
               "version": "[0.104.2, )"
@@ -79,10 +87,6 @@
               "suppressParent": "All",
               "target": "Package",
               "version": "[8.0.10, )"
-            },
-            "Microsoft.Extensions.DependencyInjection": {
-              "target": "Package",
-              "version": "[8.0.1, )"
             },
             "Microsoft.Extensions.DependencyInjection.Abstractions": {
               "target": "Package",
@@ -185,11 +189,11 @@
             },
             "Avalonia": {
               "target": "Package",
-              "version": "[11.2.1, )"
+              "version": "[11.2.2, )"
             },
             "Avalonia.Desktop": {
               "target": "Package",
-              "version": "[11.2.1, )"
+              "version": "[11.2.2, )"
             },
             "Avalonia.Diagnostics": {
               "target": "Package",
@@ -253,13 +257,9 @@
               "target": "Package",
               "version": "[5.63.0, )"
             },
-            "Npgsql.EntityFrameworkCore.PostgreSQL": {
+            "ReactiveUI": {
               "target": "Package",
-              "version": "[9.0.1, )"
-            },
-            "Swashbuckle.AspNetCore": {
-              "target": "Package",
-              "version": "[7.1.0, )"
+              "version": "[20.1.63, )"
             },
             "Swashbuckle.AspNetCore.Swagger": {
               "target": "Package",

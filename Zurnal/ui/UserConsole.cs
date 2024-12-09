@@ -1,5 +1,4 @@
-﻿using domain.Models;
-using domain.UseCase;
+﻿using domain.UseCase;
 using System.Text;
 
 namespace ui

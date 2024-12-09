@@ -1,9 +1,13 @@
 {
   "version": 2,
-  "dgSpecHash": "mfZlk4XJsWQ=",
+  "dgSpecHash": "HGQXDUV6T5U=",
   "success": true,
   "projectFilePath": "C:\\Users\\PC\\source\\repos\\Zurnal_Vizual\\Zurnal\\Zurnal.csproj",
   "expectedPackageFiles": [
+    "C:\\Users\\PC\\.nuget\\packages\\avalonia\\11.2.2\\avalonia.11.2.2.nupkg.sha512",
+    "C:\\Users\\PC\\.nuget\\packages\\avalonia.buildservices\\0.0.29\\avalonia.buildservices.0.0.29.nupkg.sha512",
+    "C:\\Users\\PC\\.nuget\\packages\\avalonia.reactiveui\\11.2.2\\avalonia.reactiveui.11.2.2.nupkg.sha512",
+    "C:\\Users\\PC\\.nuget\\packages\\avalonia.remote.protocol\\11.2.2\\avalonia.remote.protocol.11.2.2.nupkg.sha512",
     "C:\\Users\\PC\\.nuget\\packages\\azure.core\\1.43.0\\azure.core.1.43.0.nupkg.sha512",
     "C:\\Users\\PC\\.nuget\\packages\\closedxml\\0.104.2\\closedxml.0.104.2.nupkg.sha512",
     "C:\\Users\\PC\\.nuget\\packages\\closedxml.parser\\1.2.0\\closedxml.parser.1.2.0.nupkg.sha512",
@@ -23,6 +27,7 @@
     "C:\\Users\\PC\\.nuget\\packages\\grpc.net.clientfactory\\2.50.0\\grpc.net.clientfactory.2.50.0.nupkg.sha512",
     "C:\\Users\\PC\\.nuget\\packages\\grpc.net.common\\2.50.0\\grpc.net.common.2.50.0.nupkg.sha512",
     "C:\\Users\\PC\\.nuget\\packages\\humanizer.core\\2.14.1\\humanizer.core.2.14.1.nupkg.sha512",
+    "C:\\Users\\PC\\.nuget\\packages\\microcom.runtime\\0.11.0\\microcom.runtime.0.11.0.nupkg.sha512",
     "C:\\Users\\PC\\.nuget\\packages\\microsoft.aspnetcore.openapi\\8.0.11\\microsoft.aspnetcore.openapi.8.0.11.nupkg.sha512",
     "C:\\Users\\PC\\.nuget\\packages\\microsoft.bcl.asyncinterfaces\\6.0.0\\microsoft.bcl.asyncinterfaces.6.0.0.nupkg.sha512",
     "C:\\Users\\PC\\.nuget\\packages\\microsoft.codeanalysis.analyzers\\3.3.3\\microsoft.codeanalysis.analyzers.3.3.3.nupkg.sha512",

@@ -1,5 +1,4 @@
 ﻿using data.RemoteData.RemoteDataBase.DAO;
-using domain.Models;
 using Microsoft.EntityFrameworkCore;
 using remoteData.RemoteDataBase;
 

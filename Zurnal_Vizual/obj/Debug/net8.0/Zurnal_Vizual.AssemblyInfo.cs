@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Zurnal_Vizual")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+8e78b129eaddfab72461facfad823b5dae9d0c3c")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+9644a4176c58e47c87596bcab2afbb9d6784b6be")]
 [assembly: System.Reflection.AssemblyProductAttribute("Zurnal_Vizual")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Zurnal_Vizual")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

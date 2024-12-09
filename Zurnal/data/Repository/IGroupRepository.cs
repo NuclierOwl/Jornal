@@ -1,5 +1,4 @@
 ﻿using data.RemoteData.RemoteDataBase.DAO;
-using domain.Models;
 
 namespace data.Repository
 {
@@ -10,6 +9,7 @@ namespace data.Repository
         bool UpdateGroupById(int groupID, GroupDao updatedGroup);
         GroupDao GetGroupById(int groupID);
         bool AddGroup(GroupDao newGroup);
+        public IEnumerable<GroupDao> GetGroupsWithStudents();
 
     }
 }

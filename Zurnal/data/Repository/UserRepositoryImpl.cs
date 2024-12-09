@@ -1,6 +1,4 @@
 ﻿using data.Exception;
-using data.RemoteData.RemoteDataBase.DAO;
-using domain.Models;
 using User = data.RemoteData.RemoteDataBase.DAO.UserDao;
 
 namespace data.Repository

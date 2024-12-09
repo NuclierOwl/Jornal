@@ -1,6 +1,7 @@
 ﻿using data.RemoteData.RemoteDataBase.DAO;
 using data.Repository;
 using domain.Models;
+using UserDao = data.RemoteData.RemoteDataBase.DAO.UserDao;
 
 
 
@@ -14,7 +15,6 @@ namespace domain.UseCase
         {
             _repositoryGroupImpl = repositoryGroupImpl;
         }
-
 
         private GroupDao ValidateGroupExistence(int groupId)
         {
@@ -89,9 +89,6 @@ namespace domain.UseCase
                 throw new ArgumentException("Группа не найдена.");
             }
         }
-
-
-        // Метод для изменения названия группы
         public bool UpdateGroup(int groupId, string newGroupName)
         {
             var existingGroup = _repositoryGroupImpl.GetAllGroup()
@@ -99,12 +96,33 @@ namespace domain.UseCase
 
             if (existingGroup == null)
             {
-                return false; // Группа с таким ID не найдена
+                return false; 
             }
 
             existingGroup.Name = newGroupName;
             _repositoryGroupImpl.UpdateGroupById(existingGroup.Id, existingGroup);
-            return true; // Успешное обновление
+            return true; 
+        }
+
+        public IEnumerable<GroupDao> GetGroupsWithStudents()
+        {
+            return _repositoryGroupImpl.GetAllGroup().Select(
+                group => new GroupDao
+                {
+                    Id = group.Id,
+                    Name = group.Name,
+                    Users = group.Users.Select(
+                        user => new UserDao
+                        {
+                            Guid = user.Guid,
+                            FIO = user.FIO,
+                            Group = new GroupDao
+                            {
+                                Id = group.Id,
+                                Name = group.Name,
+                            }
+                        }).ToList()
+                }).ToList();
         }
 
     }

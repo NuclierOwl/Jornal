@@ -14,8 +14,8 @@ public class SQLGroupRepositoryImpl : IGroupRepository
     
     public GroupDao? GetGroupById(int groupId)
     {
-        var groupDao = _remoteDatabaseContext.groups.FirstOrDefault(g => g.Id == groupId);
-        return groupDao != null ? new GroupDao { Id = groupDao.Id, Name = groupDao.Name } : null;
+        var GroupDao = _remoteDatabaseContext.groups.FirstOrDefault(g => g.Id == groupId);
+        return GroupDao != null ? new GroupDao { Id = GroupDao.Id, Name = GroupDao.Name } : null;
     }
 
     
@@ -32,8 +32,8 @@ public class SQLGroupRepositoryImpl : IGroupRepository
         if (_remoteDatabaseContext.groups.Any(g => g.Id == group.Id))
             return false;
 
-        var groupDao = new GroupDao { Id = group.Id, Name = group.Name };
-        _remoteDatabaseContext.groups.Add(groupDao);
+        var GroupDao = new GroupDao { Id = group.Id, Name = group.Name };
+        _remoteDatabaseContext.groups.Add(GroupDao);
         _remoteDatabaseContext.SaveChanges();
         return true;
     }
@@ -60,5 +60,10 @@ public class SQLGroupRepositoryImpl : IGroupRepository
         _remoteDatabaseContext.groups.Remove(existingGroup);
         _remoteDatabaseContext.SaveChanges();
         return true;
+    }
+
+    public IEnumerable<GroupDao> GetGroupsWithStudents()
+    {
+        throw new NotImplementedException();
     }
 }

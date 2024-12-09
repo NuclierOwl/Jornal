@@ -1,7 +1,7 @@
 using System;
 using Avalonia.Controls;
 using Avalonia.Controls.Templates;
-using Zurnal_Vizual.ViewModels;
+using Presence.Desktop.ViewModels;
 
 namespace Zurnal_Vizual
 {

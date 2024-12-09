@@ -1,6 +1,5 @@
 ﻿using data.RemoteData.RemoteDataBase.DAO;
 using data.Repository;
-using domain.Models;
 using domain.UseCase;
 using remoteData.RemoteDataBase;
 

@@ -1,5 +1,4 @@
 ﻿using data.RemoteData.RemoteDataBase.DAO;
-using domain.Models;
 
 namespace data.Repository
 {

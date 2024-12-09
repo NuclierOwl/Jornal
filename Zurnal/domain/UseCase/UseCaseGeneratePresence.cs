@@ -1,7 +1,6 @@
 ﻿using ClosedXML.Excel;
 using data.RemoteData.RemoteDataBase.DAO;
 using data.Repository;
-using domain.Models;
 
 namespace domain.UseCase
 {

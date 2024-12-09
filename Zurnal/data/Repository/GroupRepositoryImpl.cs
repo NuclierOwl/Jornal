@@ -1,6 +1,5 @@
 ﻿using data.RemoteData.RemoteDataBase.DAO;
 using data.Repository;
-using domain.Models;
 
 public class GroupRepositoryImpl : IGroupRepository
 {
@@ -45,5 +44,10 @@ public class GroupRepositoryImpl : IGroupRepository
 
         _groups.Remove(existingGroup);
         return true; 
+    }
+
+    public IEnumerable<GroupDao> GetGroupsWithStudents()
+    {
+        throw new NotImplementedException();
     }
 }
