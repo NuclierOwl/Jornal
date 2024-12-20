@@ -1,11 +1,12 @@
 ﻿using data.Exception;
+using data.RemoteData.RemoteDataBase.DAO;
 using User = data.RemoteData.RemoteDataBase.DAO.UserDao;
 
 namespace data.Repository
 {
     public class UserRepositoryImpl : IUserRepository
     {
-        private List<User> _users;
+        public List<User> _users;
 
         public IEnumerable<User> GetAllUsers => throw new NotImplementedException();
 
@@ -45,7 +46,12 @@ namespace data.Repository
                 .ToList();
         }
 
-        List<RemoteData.RemoteDataBase.DAO.UserDao> IUserRepository.GetUserNames()
+        List<UserDao> IUserRepository.GetUserNames()
+        {
+            throw new NotImplementedException();
+        }
+
+        public User? AddUser(User user)
         {
             throw new NotImplementedException();
         }

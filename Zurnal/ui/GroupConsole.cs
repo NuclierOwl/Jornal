@@ -1,22 +1,24 @@
-﻿using domain.UseCase;
+﻿using data.RemoteData.RemoteDataBase.DAO;
+using domain.UseCase;
 using System.Text;
+using Zurnal.data.Repository;
 
 namespace ui
 {
     public class GroupConsoleUI
     {
-        private readonly GroupUseCase _groupUseCase;
-
+        public readonly GroupUseCase _groupUseCase;
+        public IGroupUseCase _IgroupUseCase;
         public GroupConsoleUI(GroupUseCase groupUseCase)
         {
             _groupUseCase = groupUseCase;
         }
 
-        public void FindGroupById(int groupId)
+        public void FindGroupById(int GroupID)
         {
             try
             {
-                var group = _groupUseCase.FindGroupById(groupId);
+                var group = _groupUseCase.FindGroupById(GroupID);
                 Console.WriteLine($"ID группы: {group.Id} Название группы: {group.Name}");
             }
             catch (Exception ex)
@@ -41,13 +43,13 @@ namespace ui
         }
 
         
-        public void AddGroup(string groupName)
+        public void AddGroup(string Id)
         {
             try
             {
-                ValidateGroupName(groupName); 
-                _groupUseCase.AddGroup(groupName);
-                Console.WriteLine($"\nГруппа {groupName} добавлена.\n");
+                ValidateId(Id); 
+                _groupUseCase.AddGroup(Id);
+                Console.WriteLine($"\nГруппа {Id} добавлена.\n");
             }
             catch (Exception ex)
             {
@@ -55,14 +57,14 @@ namespace ui
             }
         }
 
-        public void RemoveGroup(string groupIdStr)
+        public void RemoveGroup(string GroupIDStr)
         {
             try
             {
-                int groupId = int.Parse(groupIdStr);
-                ValidateGroupId(groupId); 
-                _groupUseCase.RemoveGroupById(groupId);
-                Console.WriteLine($"Группа с ID: {groupId} удалена");
+                int GroupID = int.Parse(GroupIDStr);
+                ValidateGroupID(GroupID); 
+                _groupUseCase.RemoveGroupById(GroupID);
+                Console.WriteLine($"Группа с ID: {GroupID} удалена");
             }
             catch (Exception ex)
             {
@@ -71,34 +73,40 @@ namespace ui
         }
 
 
-        public void UpdateGroupName(int groupId, string newGroupName)
+        public void UpdateId(int GroupID, string newId)
         {
-            var isUpdated = _groupUseCase.UpdateGroup(groupId, newGroupName);
+            var isUpdated = _groupUseCase.UpdateGroup(GroupID, newId);
 
             if (isUpdated)
             {
-                Console.WriteLine($"\nНазвание группы с ID {groupId} успешно изменено на {newGroupName}.\n");
+                Console.WriteLine($"\nНазвание группы с ID {GroupID} успешно изменено на {newId}.\n");
             }
             else
             {
-                Console.WriteLine($"\nОшибка: Группа с ID {groupId} не существует в базе данных.\n");
+                Console.WriteLine($"\nОшибка: Группа с ID {GroupID} не существует в базе данных.\n");
             }
         }
 
-        private void ValidateGroupId(int groupId)
+        public void ValidateGroupID(int GroupID)
         {
-            if (groupId < 1)
+            if (GroupID < 1)
             {
                 throw new ArgumentException("Введите корректный ID группы.");
             }
         }
+        
 
-        private void ValidateGroupName(string groupName)
+        public void ValidateId(string Id)
         {
-            if (string.IsNullOrWhiteSpace(groupName))
+            if (string.IsNullOrWhiteSpace(Id))
             {
                 throw new ArgumentException("Имя группы не может быть пустым.");
             }
+        }
+
+        public List<GroupDao> GetAllGroups()
+        {
+            return _IgroupUseCase.GetGroupsWithStudents().ToList();
         }
     }
 }

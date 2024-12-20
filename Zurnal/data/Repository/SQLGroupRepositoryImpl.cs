@@ -4,7 +4,7 @@ using remoteData.RemoteDataBase;
 
 public class SQLGroupRepositoryImpl : IGroupRepository
 {
-    private readonly RemoteDatabaseContext _remoteDatabaseContext;
+    public readonly RemoteDatabaseContext _remoteDatabaseContext;
 
     public SQLGroupRepositoryImpl(RemoteDatabaseContext remoteDatabaseContext)
     {
@@ -12,9 +12,9 @@ public class SQLGroupRepositoryImpl : IGroupRepository
     }
 
     
-    public GroupDao? GetGroupById(int groupId)
+    public GroupDao? GetGroupById(int GroupID)
     {
-        var GroupDao = _remoteDatabaseContext.groups.FirstOrDefault(g => g.Id == groupId);
+        var GroupDao = _remoteDatabaseContext.groups.FirstOrDefault(g => g.Id == GroupID);
         return GroupDao != null ? new GroupDao { Id = GroupDao.Id, Name = GroupDao.Name } : null;
     }
 
@@ -39,9 +39,9 @@ public class SQLGroupRepositoryImpl : IGroupRepository
     }
 
     
-    public bool UpdateGroupById(int groupID, GroupDao updatedGroup)
+    public bool UpdateGroupById(int GroupID, GroupDao updatedGroup)
     {
-        var existingGroup = _remoteDatabaseContext.groups.FirstOrDefault(g => g.Id == groupID);
+        var existingGroup = _remoteDatabaseContext.groups.FirstOrDefault(g => g.Id == GroupID);
         if (existingGroup == null)
             return false;
 
@@ -51,9 +51,9 @@ public class SQLGroupRepositoryImpl : IGroupRepository
     }
 
     
-    public bool RemoveGroupById(int groupID)
+    public bool RemoveGroupById(int GroupID)
     {
-        var existingGroup = _remoteDatabaseContext.groups.FirstOrDefault(g => g.Id == groupID);
+        var existingGroup = _remoteDatabaseContext.groups.FirstOrDefault(g => g.Id == GroupID);
         if (existingGroup == null)
             return false;
 

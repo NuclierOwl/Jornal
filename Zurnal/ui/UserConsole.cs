@@ -1,18 +1,42 @@
-﻿using domain.UseCase;
+﻿using data.RemoteData.RemoteDataBase.DAO;
+using domain.UseCase;
 using System.Text;
 
 namespace ui
 {
     public class UserConsoleUI
     {
-        private readonly UserUseCase _userUseCase;
+        public readonly UserUseCase _userUseCase;
 
         public UserConsoleUI(UserUseCase userUseCase)
         {
             _userUseCase = userUseCase;
         }
+        public List<UserDao> GetAllUsers()
+        {
+            return _userUseCase.GetAllUsers();
+        }
 
-        
+        public void AddUser(string fio, int GroupID)
+        {
+            try
+            {
+                UserDao newUser = new UserDao
+                {
+                    FIO = fio,
+                    GroupID = GroupID,
+                    Guid = Guid.NewGuid()
+                };
+
+                _userUseCase.AddUser(fio, GroupID);
+
+                Console.WriteLine($"\nПользователь {fio} добавлен в группу с ID {GroupID}.\n");
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine($"Ошибка: {ex.Message}\n");
+            }
+        }
         public void DisplayAllUsers()
         {
             Console.WriteLine("\n=== Список всех пользователей ===");

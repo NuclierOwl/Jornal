@@ -1,0 +1,6 @@
+<Window xmlns="https://github.com/avaloniaui"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        x:Class="Zurnal_Vizual.EditUserDialog"
+        Title="Edit User Dialog">
+	<!-- Ваш XAML код здесь -->
+</Window>

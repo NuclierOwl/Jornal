@@ -3,11 +3,11 @@ using data.Repository;
 
 public class GroupRepositoryImpl : IGroupRepository
 {
-    private List<GroupDao> _groups = new List<GroupDao>();
+    public List<GroupDao> _groups = new List<GroupDao>();
 
-    public GroupDao? GetGroupById(int groupId)
+    public GroupDao? GetGroupById(int GroupID)
     {
-        return _groups.FirstOrDefault(g => g.Id == groupId);
+        return _groups.FirstOrDefault(g => g.Id == GroupID);
     }
 
     // Метод для получения всех групп
@@ -24,10 +24,9 @@ public class GroupRepositoryImpl : IGroupRepository
         return true; 
     }
 
-    // Метод для обновления существующей группы
-    public bool UpdateGroupById(int groupID, GroupDao updatedGroup)
+    public bool UpdateGroupById(int GroupID, GroupDao updatedGroup)
     {
-        var existingGroup = GetGroupById(groupID);
+        var existingGroup = GetGroupById(GroupID);
         if (existingGroup == null)
             return false; 
 
@@ -36,9 +35,9 @@ public class GroupRepositoryImpl : IGroupRepository
     }
 
     
-    public bool RemoveGroupById(int groupID)
+    public bool RemoveGroupById(int GroupID)
     {
-        var existingGroup = GetGroupById(groupID);
+        var existingGroup = GetGroupById(GroupID);
         if (existingGroup == null)
             return false; 
 

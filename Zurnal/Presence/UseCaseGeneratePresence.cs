@@ -12,7 +12,7 @@ namespace Zurnal.Presence
             public bool IsPresent { get; set; }
         }
 
-        private List<GroupDao> groups;
+        public List<GroupDao> groups;
 
         public UseCaseGeneratePresence(List<GroupDao> groups)
         {

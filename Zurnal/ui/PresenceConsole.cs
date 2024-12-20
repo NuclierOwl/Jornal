@@ -7,9 +7,9 @@ namespace ui
 {
     public class PresenceConsole
     {
-        private readonly UseCaseGeneratePresence _presenceUseCase;
-        private readonly IPresenceRepository _presenceRepository;
-        private readonly RemoteDatabaseContext _remoteDatabaseContext;
+        public readonly UseCaseGeneratePresence _presenceUseCase;
+        public readonly IPresenceRepository _presenceRepository;
+        public readonly RemoteDatabaseContext _remoteDatabaseContext;
 
         public PresenceConsole(UseCaseGeneratePresence presenceUseCase, IPresenceRepository presenceRepository)
         {
@@ -18,27 +18,27 @@ namespace ui
             _remoteDatabaseContext = new RemoteDatabaseContext();
         }
 
-        public void GeneratePresenceForDay(DateTime date, int groupId, int firstLesson, int lastLesson)
+        public void GeneratePresenceForDay(DateTime date, int GroupID, int firstLesson, int lastLesson)
         {
             ExecuteWithExceptionHandling(() =>
-                _presenceUseCase.GeneratePresenceForDay(firstLesson, lastLesson, groupId, date),
+                _presenceUseCase.GeneratePresenceForDay(firstLesson, lastLesson, GroupID, date),
                 "Посещаемость на день не получилась.",
                 "Ошибка. Посещаемость не сгенерирована.");
         }
 
-        public void GeneratePresenceForWeek(DateTime date, int groupId, int firstLesson, int lastLesson)
+        public void GeneratePresenceForWeek(DateTime date, int GroupID, int firstLesson, int lastLesson)
         {
             ExecuteWithExceptionHandling(() =>
-                _presenceUseCase.GeneratePresenceForWeek(firstLesson, lastLesson, groupId, date),
+                _presenceUseCase.GeneratePresenceForWeek(firstLesson, lastLesson, GroupID, date),
                 "Посещаемость на неделю не получилась.",
                 "Ошибка. Посещаемость не сгенерирована.");
         }
 
-        public void DisplayPresence(DateTime date, int groupId)
+        public void DisplayPresence(DateTime date, int GroupID)
         {
             try
             {
-                var presences = _presenceUseCase.GetPresenceByGroupAndDate(groupId, date);
+                var presences = _presenceUseCase.GetPresenceByGroupAndDate(GroupID, date);
                 if (presences == null || !presences.Any())
                 {
                     Console.WriteLine("Нет данных о посещаемости на выбранную дату.");
@@ -54,22 +54,22 @@ namespace ui
             }
         }
 
-        public void MarkUserAsMissing(DateTime date, int groupId, Guid userGuid, int firstLesson, int lastLesson)
+        public void MarkUserAsMissing(DateTime date, int GroupID, Guid userGuid, int firstLesson, int lastLesson)
         {
-            if (!GroupExists(groupId) || !UserExists(userGuid)) return;
+            if (!GroupExists(GroupID) || !UserExists(userGuid)) return;
 
-            _presenceUseCase.MarkUserAsMissing(userGuid, groupId, firstLesson, lastLesson, date);
+            _presenceUseCase.MarkUserAsMissing(userGuid, GroupID, firstLesson, lastLesson, date);
             Console.WriteLine("Пользователь отмечен как отсутствующий.");
         }
 
-        public void DisplayAllPresenceByGroup(int groupId)
+        public void DisplayAllPresenceByGroup(int GroupID)
         {
             try
             {
-                var presences = _presenceUseCase.GetAllPresenceByGroup(groupId);
+                var presences = _presenceUseCase.GetAllPresenceByGroup(GroupID);
                 if (presences == null || !presences.Any())
                 {
-                    Console.WriteLine($"Нет данных о посещаемости для группы с ID: {groupId}.");
+                    Console.WriteLine($"Нет данных о посещаемости для группы с ID: {GroupID}.");
                     return;
                 }
 
@@ -86,9 +86,9 @@ namespace ui
             }
         }
 
-        public void DisplayGeneralPresenceForGroup(int groupId)
+        public void DisplayGeneralPresenceForGroup(int GroupID)
         {
-            var summary = _presenceRepository.GetGeneralPresenceForGroup(groupId);
+            var summary = _presenceRepository.GetGeneralPresenceForGroup(GroupID);
             Console.WriteLine($"Человек в группе: {summary.UserCount}, " +
                               $"Количество проведённых занятий: {summary.LessonCount}, " +
                               $"Общий процент посещаемости группы: {summary.TotalAttendancePercentage}%");
@@ -116,11 +116,11 @@ namespace ui
                 "Ошибка при экспорте посещаемости.");
         }
 
-        public void UpdateUserAttendance(Guid userGuid, int groupId, int firstLesson, int lastLesson, DateTime date, bool isAttendance)
+        public void UpdateUserAttendance(Guid userGuid, int GroupID, int firstLesson, int lastLesson, DateTime date, bool isAttendance)
         {
             try
             {
-                bool result = _presenceRepository.UpdateAttention(userGuid, groupId, firstLesson, lastLesson, date, isAttendance);
+                bool result = _presenceRepository.UpdateAttention(userGuid, GroupID, firstLesson, lastLesson, date, isAttendance);
                 Console.WriteLine(result
                     ? $"Статус посещаемости для пользователя {userGuid} обновлён."
                     : $"Данные о посещаемости для пользователя ID: {userGuid} не найдены.");
@@ -131,7 +131,7 @@ namespace ui
             }
         }
 
-        private void ExecuteWithExceptionHandling(Action action, string successMessage, string errorMessage)
+        public void ExecuteWithExceptionHandling(Action action, string successMessage, string errorMessage)
         {
             try
             {
@@ -148,7 +148,7 @@ namespace ui
             }
         }
 
-        private void DisplayPresences(IEnumerable<PresenceDao> presences)
+        public void DisplayPresences(IEnumerable<PresenceDao> presences)
         {
             int previousLessonNumber = -1;
             foreach (var presence in presences)
@@ -164,7 +164,7 @@ namespace ui
             }
         }
 
-        private bool GroupExists(int groupId) => _remoteDatabaseContext.groups.Any(g => g.Id == groupId);
-        private bool UserExists(Guid userGuid) => _remoteDatabaseContext.users.Any(u => u.Guid == userGuid);
+        public bool GroupExists(int GroupID) => _remoteDatabaseContext.groups.Any(g => g.Id == GroupID);
+        public bool UserExists(Guid userGuid) => _remoteDatabaseContext.users.Any(u => u.Guid == userGuid);
     }
 }

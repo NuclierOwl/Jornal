@@ -9,9 +9,9 @@ namespace presence_api.Controllers;
 
 public class AdminPanelController : ControllerBase
 {
-    private readonly GroupUseCase _groupUseCase;
-    private readonly UserUseCase _userUseCase;
-    private readonly UseCaseGeneratePresence _presenceUseCase;
+    public readonly GroupUseCase _groupUseCase;
+    public readonly UserUseCase _userUseCase;
+    public readonly UseCaseGeneratePresence _presenceUseCase;
 
     public AdminPanelController(GroupUseCase groupUseCase, UserUseCase userUseCase, UseCaseGeneratePresence presenceUseCase)
     {

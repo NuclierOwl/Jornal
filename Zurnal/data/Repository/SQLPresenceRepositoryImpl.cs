@@ -6,7 +6,7 @@ namespace data.Repository
 {
     public class SQLPresenceRepositoryImpl : IPresenceRepository
     {
-        private readonly RemoteDatabaseContext _remoteDatabaseContext;
+        public readonly RemoteDatabaseContext _remoteDatabaseContext;
 
         public SQLPresenceRepositoryImpl(RemoteDatabaseContext remoteDatabaseContext)
         {
@@ -55,10 +55,10 @@ namespace data.Repository
             _remoteDatabaseContext.presence.Add(newPresence);
         }
 
-        public List<PresenceDao> GetPresenceByGroup(int groupId)
+        public List<PresenceDao> GetPresenceByGroup(int GroupID)
         {
             return _remoteDatabaseContext.presence.Include(user => user.User)
-                .Where(p => p.User != null && p.User.GroupID == groupId) 
+                .Where(p => p.User != null && p.User.GroupID == GroupID) 
                 .Select(p => new PresenceDao
                 {
                     Date = p.Date,
@@ -69,10 +69,10 @@ namespace data.Repository
                 .ToList();
         }
 
-        public List<PresenceDao> GetPresenceByGroupAndDate(int groupId, DateTime date)
+        public List<PresenceDao> GetPresenceByGroupAndDate(int GroupID, DateTime date)
         {
             return _remoteDatabaseContext.presence
-                .Where(p => p.User != null && p.User.GroupID == groupId && p.Date == date.Date)
+                .Where(p => p.User != null && p.User.GroupID == GroupID && p.Date == date.Date)
                 .Select(p => new PresenceDao
                 {
                     Date = p.Date,
@@ -98,10 +98,10 @@ namespace data.Repository
             }
         }
 
-        public DateTime? GetLastDateByGroupId(int groupId)
+        public DateTime? GetLastDateByGroupID(int GroupID)
         {
             var lastDate = _remoteDatabaseContext.presence
-                .Where(p => p.User.GroupID == groupId)
+                .Where(p => p.User.GroupID == GroupID)
                 .OrderByDescending(p => p.Date)
                 .Select(p => p.Date)
                 .FirstOrDefault();
@@ -109,10 +109,10 @@ namespace data.Repository
             return lastDate == default ? (DateTime?)null : lastDate;
         }
 
-        public GroupPresenceSummary GetGeneralPresenceForGroup(int groupId)
+        public GroupPresenceSummary GetGeneralPresenceForGroup(int GroupID)
         {
             var presences = _remoteDatabaseContext.presence
-                .Where(p => p.User.GroupID == groupId)
+                .Where(p => p.User.GroupID == GroupID)
                 .OrderBy(p => p.Date).ThenBy(p => p.LessonNumber)
                 .ToList();
 
@@ -163,10 +163,10 @@ namespace data.Repository
 
 
 
-        public bool UpdateAttention(Guid UserGuid, int groupId, int firstLesson, int lastLesson, DateTime date, bool isAttendance)
+        public bool UpdateAttention(Guid UserGuid, int GroupID, int firstLesson, int lastLesson, DateTime date, bool isAttendance)
         {
             var presences = _remoteDatabaseContext.presence
-                .Where(p => p.UserGuid == UserGuid && p.User.GroupID == groupId &&
+                .Where(p => p.UserGuid == UserGuid && p.User.GroupID == GroupID &&
                             p.LessonNumber >= firstLesson && p.LessonNumber <= lastLesson && p.Date == date)
                 .ToList();
 
@@ -181,11 +181,11 @@ namespace data.Repository
             }
             return false;
         }
-        public List<PresenceDao> GetAttendanceByGroup(int groupId)
+        public List<PresenceDao> GetAttendanceByGroup(int GroupID)
         {
 
             var userGuidsInGroup = _remoteDatabaseContext.users
-                .Where(u => u.GroupID == groupId)
+                .Where(u => u.GroupID == GroupID)
                 .Select(u => u.Guid)
                 .ToList();
 

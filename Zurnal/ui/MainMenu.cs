@@ -5,9 +5,9 @@ namespace ui
 {
     public class MainMenuUI
     {
-        private readonly UserConsoleUI _userConsoleUI;
-        private readonly GroupConsoleUI _groupConsoleUI;
-        private readonly PresenceConsole _presenceConsoleUI;
+        public readonly UserConsoleUI _userConsoleUI;
+        public readonly GroupConsoleUI _groupConsoleUI;
+        public readonly PresenceConsole _presenceConsoleUI;
 
         public MainMenuUI(UserUseCase userUseCase, GroupUseCase groupUseCase, UseCaseGeneratePresence presenceUseCase, IPresenceRepository presenceRepository)
         {
@@ -59,6 +59,20 @@ namespace ui
                         _userConsoleUI.DisplayAllUsers();
                         break;
 
+                    case "Cr User":
+                        Console.Write("Введите ID группы пользователя: ");
+                        if (int.TryParse(Console.ReadLine(), out int newGuidName))
+                        {
+                            Console.Write("Введите Name пользователя для добавления: ");
+                            string newUserName = Console.ReadLine();
+                            _userConsoleUI.AddUser(newUserName, newGuidName);
+                        }
+                        else
+                        {
+                            Console.WriteLine("Неверный формат ID группы");
+                        }
+                        break;
+
                     case "Drop User":
                         Console.Write("Введите Guid пользователя для удаления: ");
                         if (Guid.TryParse(Console.ReadLine(), out Guid userGuid))
@@ -101,16 +115,16 @@ namespace ui
 
                     case "Cr Group":
                         Console.Write("Введите название новой группы: ");
-                        string newGroupName = Console.ReadLine();
-                        _groupConsoleUI.AddGroup(newGroupName);
+                        string newId = Console.ReadLine();
+                        _groupConsoleUI.AddGroup(newId);
                         break;
 
                     case "Drop Group":
                         Console.Write("Введите ID группы для удаления: ");
-                        string groupIdForDeleteStr = Console.ReadLine(); 
-                        if (!string.IsNullOrWhiteSpace(groupIdForDeleteStr) && int.TryParse(groupIdForDeleteStr, out int groupIdForDelete))
+                        string GroupIDForDeleteStr = Console.ReadLine(); 
+                        if (!string.IsNullOrWhiteSpace(GroupIDForDeleteStr) && int.TryParse(GroupIDForDeleteStr, out int GroupIDForDelete))
                         {
-                            _groupConsoleUI.RemoveGroup(groupIdForDeleteStr); 
+                            _groupConsoleUI.RemoveGroup(GroupIDForDeleteStr); 
                         }
                         else
                         {
@@ -120,11 +134,11 @@ namespace ui
 
                     case "RN Group":
                         Console.Write("Введите ID группы для изменения: ");
-                        if (int.TryParse(Console.ReadLine(), out int groupIdToUpdate))
+                        if (int.TryParse(Console.ReadLine(), out int GroupIDToUpdate))
                         {
                             Console.Write("Введите новое название группы: ");
                             string newName = Console.ReadLine();
-                            _groupConsoleUI.UpdateGroupName(groupIdToUpdate, newName);
+                            _groupConsoleUI.UpdateId(GroupIDToUpdate, newName);
                         }
                         else
                         {
@@ -150,9 +164,9 @@ namespace ui
                         Console.Write("Введите номер последнего занятия: ");
                         int lastLesson = int.Parse(Console.ReadLine());
                         Console.Write("Введите ID группы: ");
-                        int groupIdForPresence = int.Parse(Console.ReadLine());
+                        int GroupIDForPresence = int.Parse(Console.ReadLine());
 
-                        _presenceConsoleUI.GeneratePresenceForDay(DateTime.Now, groupIdForPresence, firstLesson, lastLesson);
+                        _presenceConsoleUI.GeneratePresenceForDay(DateTime.Now, GroupIDForPresence, firstLesson, lastLesson);
                         break;
 
                     case "Gen weak-pres":
@@ -161,9 +175,9 @@ namespace ui
                         Console.Write("Введите номер последнего занятия: ");
                         int lastLessonForWeek = int.Parse(Console.ReadLine());
                         Console.Write("Введите ID группы: ");
-                        int groupIdForWeekPresence = int.Parse(Console.ReadLine());
+                        int GroupIDForWeekPresence = int.Parse(Console.ReadLine());
 
-                        _presenceConsoleUI.GeneratePresenceForWeek(DateTime.Now, groupIdForWeekPresence, firstLessonForWeek, lastLessonForWeek);
+                        _presenceConsoleUI.GeneratePresenceForWeek(DateTime.Now, GroupIDForWeekPresence, firstLessonForWeek, lastLessonForWeek);
                         break;
 
                     case "SMe pres":
@@ -190,16 +204,16 @@ namespace ui
                         Console.Write("Введите номер последнего занятия: ");
                         int lastAbsLesson = int.Parse(Console.ReadLine());
                         Console.Write("Введите ID группы: ");
-                        int absGroupId = int.Parse(Console.ReadLine());
+                        int absGroupID = int.Parse(Console.ReadLine());
 
-                        _presenceConsoleUI.MarkUserAsMissing(DateTime.Now, absGroupId, newUserGuid, firstAbsLesson, lastAbsLesson);
+                        _presenceConsoleUI.MarkUserAsMissing(DateTime.Now, absGroupID, newUserGuid, firstAbsLesson, lastAbsLesson);
                         break;
 
 
                     case "SMe pres ForId":
                         Console.Write("Введите ID группы: ");
-                        int groupIdForAllPresence = int.Parse(Console.ReadLine());
-                        _presenceConsoleUI.DisplayAllPresenceByGroup(groupIdForAllPresence);
+                        int GroupIDForAllPresence = int.Parse(Console.ReadLine());
+                        _presenceConsoleUI.DisplayAllPresenceByGroup(GroupIDForAllPresence);
                         break;
 
 
@@ -210,14 +224,11 @@ namespace ui
 
                     case "Info pres":
                         Console.Write("Введите ID группы: ");
-                        int searchGroupId = int.Parse(Console.ReadLine());
-                        _presenceConsoleUI.DisplayGeneralPresenceForGroup(searchGroupId);
+                        int searchGroupID = int.Parse(Console.ReadLine());
+                        _presenceConsoleUI.DisplayGeneralPresenceForGroup(searchGroupID);
                         break;
 
                     case "Exit":
-                        Console.WriteLine("Выход...");
-                        return;
-
                     case "exit":
                         Console.WriteLine("Выход...");
                         return;

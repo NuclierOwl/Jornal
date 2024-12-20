@@ -2,7 +2,7 @@
 {
     public class GroupNotFoundException : RepositoryException
     {
-        public GroupNotFoundException(int groupId)
-            : base($"Группа с ID {groupId} не найдена.") { }
+        public GroupNotFoundException(int GroupID)
+            : base($"Группа с ID {GroupID} не найдена.") { }
     }
 }

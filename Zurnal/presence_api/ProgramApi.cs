@@ -2,7 +2,7 @@ using remoteData.RemoteDataBase;
 
 internal class ProgramApi
 {
-    private static void Main(string[] args)
+    public static void Main(string[] args)
     {
         var builder = WebApplication.CreateBuilder(args);
 

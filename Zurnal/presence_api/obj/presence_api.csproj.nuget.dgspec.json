@@ -76,10 +76,10 @@
           "warn": true,
           "frameworkReferences": {
             "Microsoft.AspNetCore.App": {
-              "privateAssets": "none"
+              "publicAssets": "none"
             },
             "Microsoft.NETCore.App": {
-              "privateAssets": "all"
+              "publicAssets": "all"
             }
           },
           "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.100/PortableRuntimeIdentifierGraph.json"

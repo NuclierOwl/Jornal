@@ -7,7 +7,7 @@ namespace data.Repository
 {
     public class SQLUserRepositoryImpl : IUserRepository
     {
-        private readonly RemoteDatabaseContext _remoteDatabaseContext;
+        public readonly RemoteDatabaseContext _remoteDatabaseContext;
 
         public SQLUserRepositoryImpl(RemoteDatabaseContext remoteDatabaseContext)
         {
@@ -61,6 +61,11 @@ namespace data.Repository
         }
 
         List<RemoteData.RemoteDataBase.DAO.UserDao> IUserRepository.GetUserNames()
+        {
+            throw new NotImplementedException();
+        }
+
+        public UserDao? AddUser(UserDao user)
         {
             throw new NotImplementedException();
         }

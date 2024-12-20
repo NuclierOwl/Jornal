@@ -8,6 +8,6 @@ namespace data.RemoteData.RemoteDataBase.DAO
         public DateTime Date { get; set; }
         public bool IsAttedance { get; set; }
         public int LessonNumber { get; set; }
-        public string GroupName { get; set; }
+        public string Id { get; set; }
     }
 }

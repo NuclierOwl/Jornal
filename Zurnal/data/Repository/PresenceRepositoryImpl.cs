@@ -4,7 +4,7 @@ namespace data.Repository
 {
     public class PresenceRepositoryImpl
     {
-        private readonly List<PresenceDao> _presences = new List<PresenceDao>();
+        public readonly List<PresenceDao> _presences = new List<PresenceDao>();
 
         public void SavePresence(List<PresenceDao> presences)
         {
@@ -33,14 +33,14 @@ namespace data.Repository
             _presences.Add(presence);
         }
 
-        public List<PresenceDao> GetPresenceByGroup(int groupId)
+        public List<PresenceDao> GetPresenceByGroup(int GroupID)
         {
-            return _presences.Where(p => p.Group.Id == groupId).ToList();
+            return _presences.Where(p => p.Group.Id == GroupID).ToList();
         }
 
-        public List<PresenceDao> GetPresenceByGroupAndDate(int groupId, DateTime date)
+        public List<PresenceDao> GetPresenceByGroupAndDate(int GroupID, DateTime date)
         {
-            return _presences.Where(p => p.Group.Id == groupId && p.Date == date).ToList();
+            return _presences.Where(p => p.Group.Id == GroupID && p.Date == date).ToList();
         }
 
         public void MarkUserAsMissing(Guid userGuid, int firstLessonNumber, int lastLessonNumber)

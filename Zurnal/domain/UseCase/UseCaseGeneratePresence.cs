@@ -8,7 +8,7 @@ namespace domain.UseCase
     {
         public readonly IUserRepository _userRepository;
         public readonly IPresenceRepository _presenceRepository;
-        private readonly IGroupRepository _groupRepository;
+        public readonly IGroupRepository _groupRepository;
 
         public UseCaseGeneratePresence(IUserRepository userRepository, IPresenceRepository presenceRepository, IGroupRepository groupRepository)
         {
@@ -17,21 +17,21 @@ namespace domain.UseCase
             _groupRepository = groupRepository;
         }
 
-        public List<PresenceDao> GetPresenceByGroupAndDate(int groupId, DateTime date)
+        public List<PresenceDao> GetPresenceByGroupAndDate(int GroupID, DateTime date)
         {
-            return _presenceRepository.GetPresenceByGroupAndDate(groupId, date);
+            return _presenceRepository.GetPresenceByGroupAndDate(GroupID, date);
         }
 
 
-        public void GeneratePresenceForDay(int firstLesson, int lastLesson, int groupId, DateTime currentDate)
+        public void GeneratePresenceForDay(int firstLesson, int lastLesson, int GroupID, DateTime currentDate)
         {
-            var groupExists = _groupRepository.GetAllGroup().Any(g => g.Id == groupId);
+            var groupExists = _groupRepository.GetAllGroup().Any(g => g.Id == GroupID);
             if (!groupExists)
             {
-                throw new ArgumentException($"Группа с ID {groupId} не существует.");
+                throw new ArgumentException($"Группа с ID {GroupID} не существует.");
             }
 
-            var users = _userRepository.GetAllUsers.Where(u => u.GroupID == groupId).ToList();
+            var users = _userRepository.GetAllUsers.Where(u => u.GroupID == GroupID).ToList();
             List<PresenceDao> presences = new List<PresenceDao>();
             for (int lessonNumber = firstLesson; lessonNumber <= lastLesson; lessonNumber++)
             {
@@ -49,27 +49,27 @@ namespace domain.UseCase
             _presenceRepository.SavePresence(presences);
         }
 
-        public void GeneratePresenceForWeek(int firstLesson, int lastLesson, int groupId, DateTime startTime)
+        public void GeneratePresenceForWeek(int firstLesson, int lastLesson, int GroupID, DateTime startTime)
         {
-            var groupExists = _groupRepository.GetAllGroup().Any(g => g.Id == groupId);
+            var groupExists = _groupRepository.GetAllGroup().Any(g => g.Id == GroupID);
             if (!groupExists)
             {
-                throw new ArgumentException($"Группа с ID {groupId} не существует.");
+                throw new ArgumentException($"Группа с ID {GroupID} не существует.");
             }
 
             for (int i = 0; i < 7; i++)
             {
                 DateTime currentTime = startTime.AddDays(i);
-                GeneratePresenceForDay(firstLesson, lastLesson, groupId, currentTime);
+                GeneratePresenceForDay(firstLesson, lastLesson, GroupID, currentTime);
             }
         }
 
 
 
 
-        public void MarkUserAsMissing(Guid userGuid, int groupId, int firstLesson, int lastLesson, DateTime date)
+        public void MarkUserAsMissing(Guid userGuid, int GroupID, int firstLesson, int lastLesson, DateTime date)
         {
-            var presences = _presenceRepository.GetPresenceByGroupAndDate(groupId, date);
+            var presences = _presenceRepository.GetPresenceByGroupAndDate(GroupID, date);
             foreach (var presence in presences.Where(p => p.UserGuid == userGuid && p.LessonNumber >= firstLesson && p.LessonNumber <= lastLesson))
             {
                 presence.IsAttedance = false;
@@ -79,14 +79,14 @@ namespace domain.UseCase
 
 
 
-        public List<PresenceDao> GetAllPresenceByGroup(int groupId)
+        public List<PresenceDao> GetAllPresenceByGroup(int GroupID)
         {
-            return _presenceRepository.GetPresenceByGroup(groupId);
+            return _presenceRepository.GetPresenceByGroup(GroupID);
         }
 
-        public GroupPresenceSummary GetGeneralPresenceForGroup(int groupId)
+        public GroupPresenceSummary GetGeneralPresenceForGroup(int GroupID)
         {
-            return _presenceRepository.GetGeneralPresenceForGroup(groupId);
+            return _presenceRepository.GetGeneralPresenceForGroup(GroupID);
         }
 
         public Dictionary<string, List<Excel>> GetAllAttendanceByGroups()
@@ -111,7 +111,7 @@ namespace domain.UseCase
                             Date = record.Date,
                             IsAttedance = record.IsAttedance,
                             LessonNumber = record.LessonNumber,
-                            GroupName = group.Name
+                            Id = group.Name
                         });
                     }
                 }
@@ -153,7 +153,7 @@ namespace domain.UseCase
                             row++;
                         }
                         worksheet.Cell(row, 1).Value = record.UserName;
-                        worksheet.Cell(row, 2).Value = record.GroupName;
+                        worksheet.Cell(row, 2).Value = record.Id;
                         worksheet.Cell(row, 3).Value = record.Date.ToString("dd.MM.yyyy");
                         worksheet.Cell(row, 4).Value = record.LessonNumber.ToString();
                         worksheet.Cell(row, 5).Value = record.IsAttedance ? "Присутствует" : "Отсутствует";

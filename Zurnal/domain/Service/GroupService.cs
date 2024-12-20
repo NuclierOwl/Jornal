@@ -7,7 +7,7 @@ namespace domain.Service
 {
     public class GroupService : GroupUseCase
     {
-        private readonly IGroupRepository _groupRepository;
+        public readonly IGroupRepository _groupRepository;
         public GroupService(IGroupRepository groupRepository): base(groupRepository)
         {
             _groupRepository = groupRepository;

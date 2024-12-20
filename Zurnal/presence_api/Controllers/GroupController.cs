@@ -8,7 +8,7 @@ namespace presence_api.Controllers;
 
 public class GroupController: ControllerBase 
 {
-    private readonly GroupUseCase _groupUseCase;
+    public readonly GroupUseCase _groupUseCase;
 
     public GroupController(GroupUseCase groupUseCase)
     {

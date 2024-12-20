@@ -6,8 +6,8 @@ namespace domain.UseCase
 {
     public class UserUseCase
     {
-        private readonly IUserRepository _repositoryUserImpl;
-        private readonly IGroupRepository _repositoryGroupImpl;
+        public readonly IUserRepository _repositoryUserImpl;
+        public readonly IGroupRepository _repositoryGroupImpl;
 
         public UserUseCase(IUserRepository repositoryImpl, IGroupRepository repositoryGroupImpl)
         {
@@ -105,6 +105,24 @@ namespace domain.UseCase
                 Guid = user.Guid,
                 Group = new GroupDao { Id = group.Id, Name = group.Name }
             };
+        }
+        public void AddUser(string fio, int GroupID)
+        {
+            try
+            {
+                UserDao newUser = new UserDao
+                {
+                    FIO = fio,
+                    Guid = Guid.NewGuid(),
+                    GroupID = GroupID
+                };
+                _repositoryUserImpl.AddUser(newUser);
+                Console.WriteLine($"\nПользователь {fio} добавлен в группу с ID {GroupID}.\n");
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine($"Ошибка: {ex.Message}\n");
+            }
         }
     }
 

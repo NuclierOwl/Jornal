@@ -8,7 +8,6 @@ namespace data.Repository
         bool RemoveUserByGuid(Guid userGuid);
         User? UpdateUser(User user);
         List<User> GetUserNames();
-
-
+        User? AddUser(User NewUser);
     }
 }
